@@ -1,1 +1,25 @@
-<p>view works!</p>
+<app-nav></app-nav>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table">
+                <tr>
+                    <th>ID</th>
+                    <th>Course Title</th>
+                    <th>CourseDescription</th>
+                    <th>courseDuration</th>
+                    <th>courseDate</th>
+                    <th>courseVenue</th>
+                </tr>
+                <tr *ngFor="let i of course">
+                    <td>{{i._id}}</td>
+                    <td>{{i.courseTitle}}</td>
+                    <td>{{i.courseDescription}}</td>
+                    <td>{{i.courseDuration}}</td>
+                    <td>{{i.courseDate}}</td>
+                    <td>{{i.courseVenue}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
